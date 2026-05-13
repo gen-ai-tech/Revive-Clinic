@@ -12,28 +12,28 @@ window.addEventListener('scroll', () => {
 // ── Mobile hamburger ──
 const hamburger = document.getElementById('hamburger');
 const navLinks  = document.getElementById('navLinks');
+const menuOverlay = document.getElementById('menuOverlay');
+
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('open');
+  hamburger.classList.toggle('active');
+  menuOverlay.classList.toggle('active');
   const open = navLinks.classList.contains('open');
   hamburger.setAttribute('aria-expanded', open);
-  
-  const spans = hamburger.querySelectorAll('span');
-  if (open) {
-    spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-    spans[1].style.opacity = '0';
-    spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
-  } else {
-    spans[0].style.transform = '';
-    spans[1].style.opacity = '1';
-    spans[2].style.transform = '';
-  }
 });
 
 navLinks.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', () => {
     navLinks.classList.remove('open');
-    hamburger.querySelectorAll('span').forEach(s => { s.style.transform=''; s.style.opacity=''; });
+    hamburger.classList.remove('active');
+    menuOverlay.classList.remove('active');
   });
+});
+
+menuOverlay.addEventListener('click', () => {
+  navLinks.classList.remove('open');
+  hamburger.classList.remove('active');
+  menuOverlay.classList.remove('active');
 });
 
 // ── Modernistic Reveal Animations ──
