@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REVIVE Clinic – Skin, Hair & Mind | Salem, Tamil Nadu</title>
+  <meta name="description" content="REVIVE Skin, Hair and Mind Clinic in Salem offers expert Dermatology, Trichology, and Psychiatric/Counseling services. Book your appointment today. Rated 4.9★ by 110+ patients." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">
+        <span class="logo-icon"><i data-lucide="sparkles"></i></span>
+        <span class="logo-text">REVIVE</span>
+        <span class="logo-sub">Skin · Hair · Mind</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#contact" class="nav-cta">Book Appointment</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <img src="hero.jpg" alt="REVIVE Clinic interior – modern, calming healthcare space" class="hero-img" />
+    <div class="hero-content">
+      <div class="hero-badge">4.9 Stars · Trusted by 110+ patients</div>
+      <h1>Holistic Care for Your<br /><span class="gradient-text">Skin, Hair &amp; Mind</span></h1>
+      <p class="hero-sub">Expert Dermatology · Trichology · Psychiatry &amp; Counseling<br />Salem's most trusted integrative wellness clinic.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary" id="heroBookBtn">Book Appointment</a>
+        <a href="#services" class="btn-ghost">Explore Services</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="trust-item"><span class="trust-num">4.9 Stars</span><span class="trust-label">Google Rating</span></div>
+    <div class="trust-divider"></div>
+    <div class="trust-item"><span class="trust-num">110+</span><span class="trust-label">Happy Patients</span></div>
+    <div class="trust-divider"></div>
+    <div class="trust-item"><span class="trust-num">3</span><span class="trust-label">Specialties</span></div>
+    <div class="trust-divider"></div>
+    <div class="trust-item"><span class="trust-num">Open</span><span class="trust-label">Until 8 PM Daily</span></div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">What We Offer</p>
+        <h2>Three Pillars of Care</h2>
+        <p class="section-desc">At REVIVE, we treat you as a whole your skin, your hair, and your mental health all deserve equal attention and expert care.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card" id="card-derma">
+          <div class="service-img-wrap">
+            <img src="dermatology.jpg" alt="Dermatology consultation at REVIVE Clinic" />
+            <div class="service-img-badge">Skin</div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon service-icon--skin"><i data-lucide="user"></i></div>
+            <h3>Dermatology</h3>
+            <p>From acne and pigmentation to eczema and advanced skin treatments our dermatologist provides personalised, evidence-based care for every skin type.</p>
+            <ul class="service-list">
+              <li>Acne & Scar Treatment</li>
+              <li>Pigmentation & Melasma</li>
+              <li>Eczema & Psoriasis</li>
+              <li>Chemical Peels & Lasers</li>
+              <li>Skin Allergy & Infections</li>
+            </ul>
+            <a href="#contact" class="service-link">Book Consultation</a>
+          </div>
+        </div>
+
+        <div class="service-card" id="card-hair">
+          <div class="service-img-wrap">
+            <img src="trichology.jpg" alt="Hair & scalp treatment at REVIVE Clinic" />
+            <div class="service-img-badge">Hair</div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon service-icon--hair"><i data-lucide="scissors"></i></div>
+            <h3>Trichology (Hair)</h3>
+            <p>Comprehensive scalp and hair health solutions from hair fall and alopecia to dandruff and PRP therapy delivered with precision and care.</p>
+            <ul class="service-list">
+              <li>Hair Fall & Alopecia</li>
+              <li>Scalp Analysis & Treatment</li>
+              <li>PRP Hair Therapy</li>
+              <li>Dandruff & Seborrheic Dermatitis</li>
+              <li>Hair Growth Protocols</li>
+            </ul>
+            <a href="#contact" class="service-link">Book Consultation</a>
+          </div>
+        </div>
+
+        <div class="service-card" id="card-mind">
+          <div class="service-img-wrap">
+            <img src="counseling.jpg" alt="Mental wellness counseling at REVIVE Clinic" />
+            <div class="service-img-badge">Mind</div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon service-icon--mind"><i data-lucide="brain"></i></div>
+            <h3>Psychiatry &amp; Counseling</h3>
+            <p>A safe, non-judgmental space for mental wellness. Our psychiatrist and counselors support you through anxiety, depression, stress, and more all are welcome.</p>
+            <ul class="service-list">
+              <li>Anxiety & Depression</li>
+              <li>Stress & Burnout</li>
+              <li>Relationship Counseling</li>
+              <li>LGBTQ+ Affirmative Therapy</li>
+              <li>Psychiatric Medication Review</li>
+            </ul>
+            <a href="#contact" class="service-link">Book Consultation</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about-section">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-card-stack">
+          <div class="about-card-bg"></div>
+          <div class="about-card-main">
+            <div class="about-stat-pill">4.9 Stars Salem's Top Rated Clinic</div>
+            <p class="about-card-quote">"Your wellness journey deserves a team that sees all of you."</p>
+            <div class="about-card-pills">
+              <span>Skin</span><span>Hair</span><span>Mind</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-eyebrow">About Us</p>
+        <h2>Salem's Integrative Wellness Clinic</h2>
+        <p>REVIVE was founded with one belief: that true health is holistic. We bring together expert dermatologists, certified trichologists, and compassionate psychiatrists under one roof so you never have to choose between caring for your body and your mind.</p>
+        <div class="about-values">
+          <div class="value-item">
+            <div class="value-icon-wrap"><i data-lucide="heart"></i></div>
+            <div>
+              <h4>Inclusive &amp; Safe</h4>
+              <p>All identities welcomed and respected.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon-wrap"><i data-lucide="microscope"></i></div>
+            <div>
+              <h4>Evidence-Based</h4>
+              <p>Treatments grounded in the latest clinical research.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon-wrap"><i data-lucide="shield-check"></i></div>
+            <div>
+              <h4>Confidential</h4>
+              <p>Your privacy is our top priority, always.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#contact" class="btn-primary">Book Your Visit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="section reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Patient Stories</p>
+        <h2>What Our Patients Say</h2>
+        <div class="rating-display">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <span class="rating-num">4.9</span>
+          <span class="rating-count">from 110+ Google reviews</span>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"Dr. at REVIVE completely transformed my skin. I had struggled with acne for years and within 3 months I saw results I never thought possible. The clinic is clean, modern, and everyone is so kind."</p>
+          <div class="review-author">
+            <div class="review-avatar">P</div>
+            <div><strong>Priya S.</strong><span>Acne Treatment</span></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"I was nervous about seeking mental health support, but REVIVE made me feel completely safe and heard. The counselor is incredibly empathetic and non-judgmental. Best decision I ever made."</p>
+          <div class="review-author">
+            <div class="review-avatar">A</div>
+            <div><strong>Arjun K.</strong><span>Counseling</span></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"My hair fall stopped after just 2 months of treatment here. The trichologist did a thorough scalp analysis and the PRP sessions were very professional. Highly recommend to anyone dealing with hair issues."</p>
+          <div class="review-author">
+            <div class="review-avatar">M</div>
+            <div><strong>Meena R.</strong><span>Hair Fall & PRP</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW FEATURE: QUICK ASSESSMENT TOOL -->
+  <section id="assessment" class="section assessment-section">
+    <div class="container">
+      <div class="assessment-container reveal">
+        <div class="assessment-text">
+          <p class="section-eyebrow">Personalized Guide</p>
+          <h2>Find the Right Care for You</h2>
+          <p>Not sure where to start? Select your primary concern and our system will recommend the best specialist for your needs.</p>
+          <div class="assessment-options" id="assessmentOptions">
+            <button class="assess-btn" data-target="dermatology">Skin Concerns (Acne, Glow, Rash)</button>
+            <button class="assess-btn" data-target="trichology">Hair & Scalp (Hairfall, Dandruff)</button>
+            <button class="assess-btn" data-target="psychiatry">Mental Peace (Stress, Anxiety, Sleep)</button>
+          </div>
+        </div>
+        <div class="assessment-result" id="assessmentResult">
+          <div class="result-placeholder">
+            <i data-lucide="arrow-left-right" class="pulse"></i>
+            <p>Select an option to see recommendation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section id="location" class="section location-section">
+    <div class="container location-grid">
+      <div class="location-info">
+        <p class="section-eyebrow">Find Us</p>
+        <h2>Visit REVIVE Clinic</h2>
+        <div class="location-details">
+          <div class="loc-item">
+            <div class="loc-icon-wrap"><i data-lucide="map-pin"></i></div>
+            <div>
+              <strong>Address</strong>
+              <p>First Floor, S.S. Complex, Trichy Main Road, Seelanaickenpatti, Salem<br /><em>Opposite Bharat Petroleum, above ICICI Bank</em></p>
+            </div>
+          </div>
+          <div class="loc-item">
+            <div class="loc-icon-wrap"><i data-lucide="phone"></i></div>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:+919025011711">090250 11711</a></p>
+            </div>
+          </div>
+          <div class="loc-item">
+            <div class="loc-icon-wrap"><i data-lucide="clock"></i></div>
+            <div>
+              <strong>Business Hours</strong>
+              <p>Mon – Sat: 9 AM – 8 PM | Sun: 10 AM – 4 PM<br /><span class="open-now">Open Now · Closes at 8 PM</span></p>
+            </div>
+          </div>
+        </div>
+        <a href="https://maps.google.com/?q=SS+Complex+Trichy+Main+Road+Seelanaickenpatti+Salem" target="_blank" rel="noopener" class="btn-primary">Get Directions on Google Maps</a>
+      </div>
+      <div class="map-embed">
+        <iframe
+          title="REVIVE Clinic Location Map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.0!2d78.15!3d11.65!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDM5JzAwLjAiTiA3OMKwMDknMDAuMCJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / BOOK -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header light">
+        <p class="section-eyebrow">Get In Touch</p>
+        <h2>Book Your Appointment</h2>
+        <p class="section-desc">Fill in your details and we'll confirm your appointment. We respond within 24 hours. All enquiries are strictly confidential.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form" id="appointmentForm" onsubmit="sendWhatsApp(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Your mobile number" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">Consultation Type</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="dermatology">Dermatology (Skin)</option>
+              <option value="trichology">Trichology (Hair)</option>
+              <option value="psychiatry">Psychiatry / Counseling (Mind)</option>
+              <option value="general">General Enquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message (Optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Briefly describe your concern (completely confidential)..."></textarea>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="consent" name="consent" required />
+            <label for="consent">I consent to REVIVE Clinic contacting me regarding my appointment. My information will be kept confidential.</label>
+          </div>
+          <button type="submit" class="btn-primary full-width" id="submitBtn">Send Appointment Request</button>
+          <div class="form-success" id="formSuccess">
+            ✓ Thank you! We'll contact you within 24 hours to confirm your appointment.
+          </div>
+        </form>
+        <div class="contact-info-panel">
+          <div class="quick-contact">
+            <h3>Quick Contact</h3>
+            <a href="tel:+919025011711" class="quick-call" id="callBtn">
+              <div class="qc-icon-wrap"><i data-lucide="phone"></i></div>
+              <div><strong>Call Us Now</strong></div>
+            </a>
+            <a href="https://wa.me/919025011711?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20REVIVE%20Clinic." class="quick-whatsapp" id="whatsappBtn" target="_blank" rel="noopener">
+              <div class="qc-icon-wrap"><i data-lucide="message-circle"></i></div>
+              <div><strong>WhatsApp</strong></div>
+            </a>
+          </div>
+          <div class="hours-panel">
+            <h3>Hours</h3>
+            <div class="hours-row"><span>Mon – Sat</span><span>9 AM – 8 PM</span></div>
+            <div class="hours-row"><span>Sunday</span><span>10 AM – 4 PM</span></div>
+            <div class="hours-note">Walk-ins welcome. Appointments preferred.</div>
+          </div>
+          <div class="lgbtq-badge">
+            <p>REVIVE is an inclusive, affirming clinic. Everyone is welcome. Your identity is celebrated here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">✦ REVIVE</div>
+        <p class="footer-tagline">Holistic Care for Your Skin, Hair &amp; Mind</p>
+        <p class="footer-addr">First Floor, S.S. Complex, Trichy Main Road,<br />Seelanaickenpatti, Salem, Tamil Nadu</p>
+        <a href="tel:+919025011711" class="footer-phone">090250 11711</a>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Dermatology</a></li>
+          <li><a href="#services">Trichology</a></li>
+          <li><a href="#services">Psychiatry &amp; Counseling</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Clinic</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#reviews">Patient Reviews</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contact">Book Appointment</a></li>
+        </ul>
+      </div>
+      <div class="footer-cta">
+        <h4>Ready to feel better?</h4>
+        <p>Book your consultation today. Closes at 8 PM.</p>
+        <a href="#contact" class="btn-primary">Book Now</a>
+        <div class="footer-rating">&#9733;&#9733;&#9733;&#9733;&#9733; 4.9 · 110+ Reviews</div>
+        <div class="footer-lgbtq">Inclusive &amp; Welcoming Space</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 REVIVE Skin, Hair and Mind Clinic. All rights reserved.</p>
+      <p>Salem, Tamil Nadu · <a href="tel:+919025011711">090250 11711</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
